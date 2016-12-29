@@ -1,0 +1,23 @@
+{
+  "name": "next-redux-app",
+  "version": "0.0.1",
+  "description": "Sample app with Next.js and Redux",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "next"
+  },
+  "keywords": [
+    "react",
+    "redux",
+    "nextjs",
+    "javascript"
+  ],
+  "author": "idraki muhamad",
+  "license": "ISC",
+  "dependencies": {
+    "react-redux": "^5.0.1",
+    "redux": "^3.6.0",
+    "redux-thunk": "^2.1.0"
+  }
+}
