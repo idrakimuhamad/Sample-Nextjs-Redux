@@ -3,6 +3,7 @@ import Link from 'next/link'
 import { Provider } from 'react-redux'
 import { reducer, startClock, initStore } from '../redux/store'
 import Clock from '../components/Clock'
+import Head from '../components/Head'
 
 export default class Counter extends React.Component {
     static getInitialProps({ req }) {
@@ -29,11 +30,12 @@ export default class Counter extends React.Component {
     render () {
         return (
             <div>
+                <Head />
                 <Provider store={this.store}>
                     <Clock />
                 </Provider>
 
-                <Link href='/about'><a>About</a></Link>
+                <Link href='/about'><a className="measure lh-copy f6 db no-underline bg-animate bg-white hover-bg-light-blue black">About</a></Link>
             </div>
         )
     }

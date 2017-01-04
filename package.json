@@ -1,11 +1,12 @@
 {
-  "name": "next-redux-app",
+  "name": "petting-zoo-justice",
   "version": "0.0.1",
-  "description": "Sample app with Next.js and Redux",
+  "description": "Something something",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "next"
+    "css": "tachyons stylesheets/css/lib.css > static/css/app.css --minify",
+    "dev": "npm run css | next"
   },
   "keywords": [
     "react",
@@ -16,8 +17,12 @@
   "author": "idraki muhamad",
   "license": "ISC",
   "dependencies": {
+    "next": "^1.2.3",
     "react-redux": "^5.0.1",
     "redux": "^3.6.0",
-    "redux-thunk": "^2.1.0"
-  }
+    "redux-thunk": "^2.1.0",
+    "tachyons": "^4.6.1",
+    "tachyons-cli": "^1.0.10"
+  },
+  "repository": "https://github.com/idrakimuhamad/Sample-Nextjs-Redux.git"
 }
