@@ -5,7 +5,7 @@ import { reducer, startClock, initStore } from '../redux/store'
 import Clock from '../components/Clock'
 import Head from '../components/Head'
 
-export default class Counter extends React.Component {
+export default class Home extends React.Component {
     static getInitialProps({ req }) {
         const isServer = !!req
         const store = initStore(reducer, null, isServer)
